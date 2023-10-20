@@ -61,8 +61,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 	}
 	else{
 		$cell=controllo($_POST["cellulare"]);
-		if(!preg_match("/^[0-9]{10}$/",$cell)){
-			$errCell="Numero di cellulare non valido! Deve avere 10 numeri";
+		if(!preg_match("/^[0-9]{12}$/",$cell)){
+			$errCell="Numero di cellulare non valido! Deve avere 12 numeri";
 		}
 	}
 	//campo via
@@ -99,8 +99,8 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     }
 	//campo comune
 	if(empty($_POST["comune"])){
-			$errCom="Inserisci il comune!";
-		}
+		$errCom="Inserisci il comune!";
+	}
 	else{
 		$com=controllo($_POST["comune"]);
 		if(!preg_match("/^([a-zA-Z- '])*$/",$com)){
@@ -111,8 +111,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 	if(empty($_POST["provincia"])){
 		$errProv="Inserisci la provincia!";
 	}
-	else
-	{
+	else{
 		$prov=controllo($_POST["provincia"]);
 		if(!preg_match("/^([a-zA-Z- '])*$/",$prov)){
 			$errProv="Provincia non valido!";
@@ -143,8 +142,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
 	}	
 }
 
-function controllo($info)          
-{
+function controllo($info){
 	$info=trim($info);             //toglie gli spazi in eccesso
 	$info=stripslashes($info);     //rimuove gli slash 
     $info=htmlspecialchars($info); //converte caratteri speciali in caratteri HTML
