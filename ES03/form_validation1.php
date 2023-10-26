@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta cahrset="UTF-8">
-    <meta name="viewport" content="width=device-width, initianl-scale=1.0">
     <title>Form Validation</title>
 </head>
 <body>
