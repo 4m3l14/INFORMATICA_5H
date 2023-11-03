@@ -19,7 +19,7 @@ END;
     $pass = $_POST["password"];
     controlloUser($user);
     controlloPass($pass);
-    if ($user == "admin" && $pass == "Ciao123") {
+    if ($user == "mrossi" && $pass == "Ciao123") {
         $_SESSION["username"] = $user;
         $_SESSION["password"] = $pass;
         header("Location: riservata.php");
@@ -31,4 +31,3 @@ END;
     ?>
 </body>
 </html>
-
