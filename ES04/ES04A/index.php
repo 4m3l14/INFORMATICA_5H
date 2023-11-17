@@ -1,11 +1,16 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>BENVENUTO</title>
-    </head>
-    <body>
-        <h1>WEBAPP</h1>
-        <h1>Gestione delle sessioni nelle applicazioni</h1>
-        <a href="riservata.php">Vai all'area riservata del sito<a><br>
-        <a href="login.php">Login</a>
-    </body>
+<head>
+    <title>Indice delle pagine-Amelia Wannaku</title>
+</head>
+<body>
+    <h1>Indice delle Pagine-Amelia Wannaku</h1>
+    <ul>
+        <li><a href="5H\ES01">TabellaPitagorica</a></li>
+        <li><a href="5H\ES02A">A - Login</a></li>
+        <li><a href="5H\ES02B">B - Login</a></li>
+        <li><a href="5H\ES03A">Form validation</a></li>
+        <li><a href="5H\ES04A">A-Gestione Sessioni</a></li>
+    </ul>
+</body>
 </html>
