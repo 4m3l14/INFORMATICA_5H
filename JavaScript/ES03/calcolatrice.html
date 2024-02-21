@@ -1,12 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <title>Calcolatrice</title>
 </head>
 <body>
-    <h1>Calcolatrice-Amelia Wannaku</h1>
+	<H1>Clacolatrice-Amelia Wannaku</H1>
     <script>
-
+        let x=0;
+        let num1;
+        let num2;
+        let operazioni;
+        do {
+            num1 = parseInt(prompt("Inserisci un numero"));
+            num2 = parseInt(prompt("Inserisci un numero"));
+            if(Number.isNaN(num1)||Number.isNaN(num2))
+                console.log("Uno dei valori inseriti non è un numero!");
+            else
+                x=1;} 
+            while(x==0)
+        do {
+            operazioni = prompt("Inserisci tra +, -, *, /, **");
+            switch(operazioni){
+                case "+":
+                    console.log("addizione");
+                    console.log(num1 + "+" + num2 +"=" + (num1+num2));
+                break;
+                case "-":
+                    console.log("sottrazione");
+                    console.log(num1 + "-" + num2 +"=" + (num1-num2));
+                break;
+                case "*":
+                    console.log("moltiplicazione");
+                    console.log(num1 + "*" + num2 +"=" + (num1*num2));
+                break;
+                case "/":
+                    console.log("divizione");
+                    console.log(num1 + "/" + num2 +"=" + (num1/num2));
+                break;
+                case "**":
+                    console.log("potenza");
+                    console.log(num1 + "**" + num2 +"=" + (num1**num2));
+                break;
+                default:
+                    console.log("Valore non correto!");
+                    operazioni=0;
+                break;}}
+                while(operazioni==0);
     </script>
 </body>
 </html>
