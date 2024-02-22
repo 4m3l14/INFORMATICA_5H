@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Inverti cifre</title>
+</head>
+<body>
+	<H1>Inverti cifre-Amelia Wannaku</H1>
+    <script>
+        let x;
+        do {
+            x=parseInt(prompt("Inserisci un numero intero"));
+            if(Number.isNaN(x))
+                console.log("Uno dei valori inseriti non è un numero");} 
+            while(Number.isNaN(x))
+        console.log(x);
+        const inverti_cifre = function(a){
+            let y = "";
+            a=a+"";
+            for(let x of a){
+                y=x+y;}
+            return y;}
+        console.log(inverti_cifre(x));
+    </script>
+</body>
+</html>
