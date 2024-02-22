@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Calcolatrice</title>
+</head>
+<body>
+	<H1>Calcolatrice-Amelia Wannaku (Windows/Linux)</H1>
+    <script>
+        let x=0;
+        let num1;
+        let num2;
+        const operazioni= {
+            somma:(a, b) => {
+                return `${a} + ${b} = ${a+b}`;},
+            sottrazione:(a, b) => {
+                return `${a} - ${b} = ${a-b}`},
+            moltiplicazione:(a, b) => {
+                return `${a} * ${b} = ${a*b}`},
+            divisione:(a, b) => {
+                if(b!=0) return `${a} / ${b} = ${a/b}`;
+                return `Non si può dividere per zero.`;},
+            potenza:(a, b) => {
+                return `${a} ** ${b} = ${a**b}`;}}
+        do {
+            num1 = parseInt(prompt("Inserisci un numero"));
+            num2 = parseInt(prompt("Inserisci un numero"));
+            if(Number.isNaN(num1)||Number.isNaN(num2))
+                console.log("Uno dei valori inseriti non è un numero.");
+            else
+                x=1;} 
+            while(x==0)
+
+        do {
+            x = prompt("Inserisci tra +, -, *, /, ** ");
+            switch(x){
+                case "+":
+                    console.log("addizione");
+                    console.log(operazioni.somma(num1,num2));
+                break;
+                case "-":
+                    console.log("sottrazione");
+                    console.log(operazioni.sottrazione(num1,num2));
+                break;
+                case "*":
+                    console.log("moltiplicazione");
+                    console.log(operazioni.moltiplicazione(num1,num2));
+                break;
+                case "/":
+                    console.log("divizione");
+                    console.log(operazioni.divisione(num1,num2));
+                break;
+                case "**":
+                    console.log("potenza");
+                    console.log(operazioni.potenza(num1,num2));
+                break;
+                default:
+                    console.log("Valore non correto!");
+                    x=0;
+                break;}}
+                while(x==0);
+    </script>
+</body>
+</html>
