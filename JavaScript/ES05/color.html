@@ -4,15 +4,25 @@
     <title>Colour Button</title>
 </head>
 <body>
-	<form action = "/action_page.php">
-        <label for="fname">Nome:</label><br>
-        <input type="text"> id="fname" name="fname" value ="Mario"><br>
-        <label for="lname">Cognome:</label><br>
-        <input type="text"> id="lname" name="lname" value ="Rossi"><br>
-        <input type="submit"> value ="submit"<br>
+	<button>Pulsante1</button>
+    <button style="color: blueviolet; background-color: antiquewhite; border-radius: 20%; border-color: green;">Pulsante2</button>
+    <button id="p3">Pulsante3</button>
 
-    </form>
+    <br><br>
+    <input type="text" name="nomeCasella" value="Contenuto" size="20" maxlength="20">
+
+     <!--modificare il colore e lo sfondo dei pulsanti presenti nella pagina-->
     <script> 
+        console.log("Esercizio C");
+        const pulsanti = document.getElementsByTagName("button");
+        const p1 = pulsanti[0];
+        const p3 = document.getElementById("p3");
+        p1.style = "color: red; background-color: blue; border-color: yellow;"
+        
+        console.log("Esercizio D");
+        let valore_casella ="prova" 
+        let valore_maiusc = valore_casella.toUpperCase();
+        p3.innerText = valore_maiusc
 
     </script>
 </body>
